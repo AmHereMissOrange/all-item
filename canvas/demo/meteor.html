@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../createjs.min.js"></script>
+		<script type="text/javascript" src="meteor.js"></script>
+	</head>
+	<style>
+		html,body{
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+	</style>
+	<body style="background-color: #000000;">
+		<canvas id="stage"  width="800" height="800"></canvas>
+		<script>
+			createjs.Ticker.timingMode = createjs.Ticker.RAF;
+			var stage = new createjs.Stage("stage");
+			document.getElementById('stage').width = document.getElementsByTagName('body')[0].clientWidth;
+			document.getElementById('stage').height = document.getElementsByTagName('body')[0].clientHeight;
+			var m = new meteor({
+				container : stage
+			});
+			createjs.Ticker.addEventListener("tick",function(){
+				m.play();
+				stage.update();
+			})
+			
+			
+		</script>
+	</body>
+</html>

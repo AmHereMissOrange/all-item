@@ -1,0 +1,14 @@
+*{
+  margin:0 0;
+  padding:0 0;
+}
+a{ 
+    text-decoration:none; 
+    color:#333; 
+} 
+html,body{
+    width: 100%;
+    height:100%;
+    overflow-x:scroll;/*水平方向，超出部分添加滚动机制*/
+    overflow-y:hidden/*竖直方向，超出部分隐藏*/
+}

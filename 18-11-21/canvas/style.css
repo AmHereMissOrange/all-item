@@ -1,0 +1,13 @@
+canvas {  
+    border:1px dashed black;  
+}  
+  
+.imgGallery{  
+    width:550px;  
+    position:absolute;  
+    height:170px  
+}  
+  
+img{  
+    opacity:0.5;  
+}  

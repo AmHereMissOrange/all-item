@@ -1,0 +1,343 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+img {
+  pointer-events: none;
+}
+.music_icon {
+  position: fixed;
+  float: right;
+  right: 0.3rem;
+  top: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: url("../img/music-btn.png");
+  background-size: cover;
+  background-position: null;
+  background-repeat: no-repeat;
+  animation: circle 3s linear infinite;
+  z-index: 999;
+}
+.load_page {
+  width: 10rem;
+  height: 100%;
+  background: linear-gradient(to bottom, #d89fc5, #e4c3c5);
+  /* 标准的语法 */
+}
+.load_page .pizza {
+  width: 4.5rem;
+  animation: circle 3s linear infinite;
+}
+.load_page .pizza_icon {
+  position: absolute;
+  top: 35%;
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+  color: white;
+}
+.load_page .gan {
+  height: 3.5rem;
+}
+.load_page .mark {
+  top: 0.3rem;
+  left: 4rem;
+  height: 3.5rem;
+  background-image: url("../img/loading-arrow.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.load_page .loadding {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+  top: 5rem;
+  width: 2rem;
+}
+@keyframes circle {
+  0% {
+    webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.index_page {
+  overflow: hidden;
+  width: 10rem;
+  height: 100%;
+  background-image: url("../img/page1-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index_page .cols {
+  position: absolute;
+  overflow: hidden;
+  width: 10rem;
+  height: 100%;
+}
+.index_page .col {
+  position: absolute;
+  display: block;
+}
+.index_page .coll {
+  width: 1rem;
+  top: 10%;
+}
+.index_page .col_r {
+  position: absolute;
+  right: 0rem;
+  top: 10%;
+}
+.index_page .colr1 {
+  width: 2rem;
+  right: 0rem;
+}
+.index_page .colr2 {
+  width: 2.5rem;
+  left: -1rem;
+  margin-top: 1.5rem;
+}
+.index_page .colb {
+  position: absolute;
+  width: 2.5rem;
+  bottom: 5%;
+}
+.index_page .index_front {
+  position: absolute;
+  width: 10rem;
+  height: 100%;
+  top: 0rem;
+  background-size: contain;
+  background-position: center center;
+}
+.index_page .index_front > img {
+  position: absolute;
+  margin: 0 auto;
+}
+.index_page .index_front .title {
+  width: 8rem;
+  top: 10%;
+  left: 10%;
+}
+.index_page .index_front .mouth {
+  width: 5rem;
+  top: 45%;
+  left: 24%;
+}
+.index_page .index_front .catch_btn {
+  position: absolute;
+  width: 4rem;
+  height: 10%;
+  top: 80%;
+  left: 33%;
+  background-image: url("../img/catch-btn.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index_page .index_front .catch_btn .tip {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  width: 0.9rem;
+}
+.page_content {
+  overflow: hidden;
+  width: 10rem;
+  height: 100%;
+  background-image: url("../img/p_content_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  animation: bg_ani 3s infinite;
+}
+.page_content > img {
+  display: block;
+  position: absolute;
+}
+.page_content .apple {
+  width: 1.5rem;
+  top: 10%;
+  left: 3rem;
+}
+.page_content .p_right {
+  width: 3rem;
+  bottom: 10%;
+  right: 0rem;
+}
+.page_content .post_btn {
+  position: absolute;
+  width: 6rem;
+  height: 10%;
+  top: 80%;
+  left: 20%;
+  background-image: url("../img/press-btn-b.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page_content .post_btn .tip {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  width: 0.9rem;
+}
+.page_content .page_front {
+  position: absolute;
+  top: 15%;
+  left: 0.5rem;
+  margin: 0 auto;
+  width: 9rem;
+  height: 60%;
+  background-image: url("../img/p_content_poster.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@keyframes bg_ani {
+  0% {
+    background-image: url("../img/p_content_bg.jpg");
+  }
+  25% {
+    background-image: url("../img/y_content_bg.jpg");
+  }
+  50% {
+    background-image: url("../img/g_content_bg.jpg");
+  }
+  75% {
+    background-image: url("../img/x_content_bg.jpg");
+  }
+}
+@keyframes fr_ani {
+  0% {
+    background-image: url("../img/poster1.jpg");
+  }
+  25% {
+    background-image: url("../img/poster2.jpg");
+  }
+  50% {
+    background-image: url("../img/poster3.jpg");
+  }
+  75% {
+    background-image: url("../img/poster4.jpg");
+  }
+}
+.ani_bg {
+  width: 10rem;
+  height: 100%;
+  background-image: url("../img/p_content_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.ani_bg .parent {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ani_bg .play_tip {
+  position: absolute;
+  display: block;
+  left: 4rem;
+  width: 2rem;
+  height: 3rem;
+  background-image: url("../img/play-tip.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 15%;
+}
+.dialog {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  width: 8rem;
+  left: 1rem;
+  top: 35%;
+  text-align: center;
+}
+.dialog .info {
+  width: 8rem;
+  display: block;
+}
+.dialog div {
+  width: 3rem;
+  height: 2rem;
+  margin-top: 0.3rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.dialog .confirm {
+  background-image: url("../img/another-btn-b.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.dialog .cancel {
+  background-image: url("../img/mycai-btn-b.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.video_contain {
+  width: 10rem;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+}
+.fr_img {
+  position: relative;
+  margin: 0 auto;
+  left: -2%;
+  top: 20.5%;
+  height: 52.8%;
+  background-image: url("../img/poster1.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  animation: fr_ani 3s infinite;
+}
+.pause {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+.play {
+  -webkit-animation-play-state: play;
+  -moz-animation-play-state: play;
+}
+video {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  /*加滤镜*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*filter:grayscale(100%);*/
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+source {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+}

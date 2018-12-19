@@ -1,0 +1,158 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+img {
+  pointer-events: none;
+}
+ul {
+  list-style: none;
+}
+.load_page {
+  background-color: rgba(247, 188, 110, 0.144);
+}
+.load_page .pizza {
+  width: 2rem;
+  animation: updown 3s linear infinite alternate;
+}
+.load_page .pizza_icon {
+  position: absolute;
+  top: 35%;
+  width: 10rem;
+  height: 4rem;
+  color: white;
+  text-align: center;
+}
+.load_page .load_txt {
+  top: 35%;
+  display: block;
+  text-align: center;
+}
+@keyframes updown {
+  50% {
+    webkit-transform: translateY(-0.5rem);
+    -moz-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem);
+  }
+}
+.index_page {
+  overflow: hidden;
+  background-image: url("../img/index.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: red;
+}
+@media screen and (min-height: 812px) {
+  .index_page {
+    background-image: url("../img/index.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.index_page .index_front {
+  width: 10rem;
+  height: 100%;
+}
+.index_page .index_front > img {
+  margin: 0 auto;
+}
+.index_page .index_front .title {
+  position: absolute;
+  width: 630px;
+  height: 260px;
+  left: 0px;
+  top: 131px;
+  background-image: url("../img/index_png.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index_page .index_front .catch_btn {
+  position: absolute;
+  width: 279px;
+  height: 123px;
+  text-align: center;
+  line-height: 123 "px";
+  left: 242px;
+  top: 1096px;
+  background-image: url("../img/index_btn.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index_page .index_front .intro {
+  width: 5rem;
+  top: 45%;
+  left: 24%;
+}
+.page_content {
+  overflow: hidden;
+  background-image: url("../img/cj.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: red;
+  text-align: center;
+}
+@media screen and (min-height: 812px) {
+  .page_content {
+    background-image: url("../img/cj.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.page_content .title {
+  position: absolute;
+  width: 609px;
+  height: 212px;
+  left: 46px;
+  top: 184px;
+  background-image: url("../img/cj_title.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page_content .txt {
+  position: absolute;
+  width: 480px;
+  height: 700px;
+  left: 150px;
+  top: 350px;
+  left: calc(50% - 240);
+  text-align: center;
+  font: 3em arial, "微软雅黑";
+  font-weight: bold;
+  text-align: left;
+  color: #6e3101;
+}
+.page_content .txt ul {
+  position: absolute;
+  top: 80px;
+}
+.page_content .txt li {
+  margin-top: 20px;
+}
+.page_content .nxt_btn {
+  position: absolute;
+  width: 418px;
+  height: 102px;
+  text-align: center;
+  line-height: 102 "px";
+  left: 165px;
+  top: 1115px;
+  background-image: url("../img/nxt_btn.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c_style {
+  color: red;
+}
