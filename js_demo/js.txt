@@ -1,0 +1,3 @@
+time-gallery            长图类动画                                                                            https://github.com/chenliangwulin/time-gallery
+Opanorama            基于Threejs，同时支持手势和陀螺仪的360度全景JS库            https://github.com/azuoge/Opanorama
+find_happy                        

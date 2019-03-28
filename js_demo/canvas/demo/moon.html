@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../createjs.min.js"></script>
+		<script type="text/javascript" src="moon.js"></script>
+	</head>
+	<style>
+		html,body{
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+	<body>
+		<canvas id="stage" style="background-color:#000000"></canvas>
+		<script type="text/javascript">
+			var stage = new createjs.Stage("stage");
+			document.getElementById('stage').width = document.getElementsByTagName('body')[0].clientWidth;
+			document.getElementById('stage').height = document.getElementsByTagName('body')[0].clientHeight;
+			
+			var m = new moon({
+				container : stage
+			});
+			
+			
+			
+		</script>
+	</body>
+</html>
